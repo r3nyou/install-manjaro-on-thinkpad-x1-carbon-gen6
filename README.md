@@ -10,18 +10,18 @@
 - manjaro GNOME
 
 ## others
-安裝中文輸入法
+**安裝中文輸入法**  
 https://notes.wadeism.net/post/manjaro-gnome-install-hime-boshiamy/
 - 沒辦法打ㄤ (已解決，把 keyboard layout 改為 us 即可)
 
-鍵盤位置調整 swap caps and ctrl
+**鍵盤位置調整 swap caps and ctrl**  
 https://ithelp.ithome.com.tw/articles/10195361
 ```
 sudo pacman -S xorg-setxkbmap
 setxkbmap -option ctrl:swapcaps
 ```
 
-ArcMenu+dash to panel 設定畫面
+**ArcMenu+dash to panel 設定畫面**
 
 ## review
 - Wifi ok
@@ -34,4 +34,5 @@ ArcMenu+dash to panel 設定畫面
 ## tmp
 Thunderbolt BIOS Assist Mode Enabled
 
+## resource
 https://wiki.archlinux.org/title/Lenovo_ThinkPad_X1_Carbon_(Gen_6)
