@@ -20,6 +20,12 @@ https://ithelp.ithome.com.tw/articles/10195361
 sudo pacman -S xorg-setxkbmap
 setxkbmap -option ctrl:swapcaps
 ```
+**休眠模式**
+/etc/default/grub -> GRUB_CMDLINE_LINUX_DEFAULT 加這行 acpi.ec_no_wakeup=1
+
+/etc/systemd/logind.conf 取消註解 HandleLidSwitch=suspend
+
+螢幕蓋上會進入 suspend 模式
 
 **ArcMenu+dash to panel 設定畫面**
 
@@ -30,6 +36,7 @@ setxkbmap -option ctrl:swapcaps
   - 外接螢幕無法獨立設定 scale
 - trackpoint: ok
 - trackpad: window system wayland fine、但 x1 只有頁面捲動手勢能用
+- fn 鍵: ok
 
 ## tmp
 Thunderbolt BIOS Assist Mode Enabled
