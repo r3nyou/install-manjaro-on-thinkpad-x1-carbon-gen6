@@ -1,3 +1,50 @@
+# install manjaro KDE on lenovo thinkpad x1 carbon(gen6)
+
+## Specs
+- X1 Carbon 6th Gen
+- core intel i7-8550U processor
+- 16GB RAM
+- 256GB SSD
+
+## Linux
+- manjaro KDE
+
+## 設定
+**設定 mirror server**
+```
+sudo pacman-mirrors --country Taiwan
+```
+
+**更新簽名**
+```
+sudo pacman -Sy manjaro-keyring manjaro-system
+```
+
+**有事沒事更新一下**
+```
+sudo pacman -Syyu
+```
+
+**安裝 yay**
+```
+sudo pacman -S base-devel
+sudo pacman -yay
+```
+
+**休眠模式調整** 
+
+/etc/default/grub -> GRUB_CMDLINE_LINUX_DEFAULT 加這行 acpi.ec_no_wakeup=1
+
+/etc/systemd/logind.conf 取消註解 HandleLidSwitch=suspend
+
+螢幕蓋上會進入 suspend 模式
+
+**安裝中文輸入法**
+
+原本想用 Hime 但不支援 wayland 所以只好改用 ibus
+
+
+---
 # install manjaro GNOME on lenovo thinkpad x1 carbon(gen6)
 
 ## Specs
