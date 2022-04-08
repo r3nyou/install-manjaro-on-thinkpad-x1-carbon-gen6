@@ -28,7 +28,7 @@ sudo pacman -Syyu
 **安裝 yay**
 ```
 sudo pacman -S base-devel
-sudo pacman -yay
+sudo pacman -S yay
 ```
 
 **休眠模式調整** 
@@ -38,6 +38,16 @@ sudo pacman -yay
 /etc/systemd/logind.conf 取消註解 HandleLidSwitch=suspend
 
 螢幕蓋上會進入 suspend 模式
+
+**terminal**
+- https://gist.github.com/yovko/becf16eecd3a1f69a4e320a95689249e
+```
+pacman build zsh-theme-powerlevel10k-git
+echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
+
+# restart konsole
+p10k configure
+```
 
 **安裝中文輸入法**
 
